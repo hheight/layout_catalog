@@ -1,0 +1,185 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  padding: 0 50px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
+
+.logo {
+  width: 40px;
+  height: 40px; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0; }
+  .menu__item {
+    list-style: none;
+    margin-right: 20px; }
+    .menu__item:last-child {
+      margin-right: 0; }
+  .menu__link {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 60px;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase; }
+  .menu__link:hover {
+    color: #00acdc; }
+
+.is-active {
+  position: relative;
+  color: #00acdc; }
+  .is-active::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #00acdc;
+    border-radius: 8px; }
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 946px;
+  padding: 50px 40px; }
+  .products--centered-horizontally {
+    margin: 0 auto; }
+
+.product-card {
+  width: 200px;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px; }
+  .product-card--bottom-gap {
+    margin-bottom: 50px; }
+  .product-card__inner {
+    padding: 15px; }
+  .product-card__photo {
+    margin: 15px 5px; }
+  .product-card__image {
+    display: block;
+    width: 160px;
+    height: 134px;
+    margin: 0 auto; }
+  .product-card__title {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    margin-top: 45px;
+    margin-bottom: 0; }
+  .product-card__code {
+    margin-top: 5px; }
+  .product-card__code, .product-card__reviews, .product-card__price-tag {
+    font-size: 11px; }
+  .product-card__price-number {
+    font-size: 16px;
+    font-weight: bold; }
+  .product-card__rating {
+    margin-top: 16px; }
+  .product-card__price, .product-card__rating {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .product-card__price {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-top: 19px;
+    margin-bottom: 20px; }
+
+.stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .stars__star {
+    width: 15px;
+    height: 15px;
+    margin-right: 4px;
+    background-image: url("../images/star.svg");
+    background-repeat: no-repeat; }
+
+.stars--1 .stars__star:nth-child(-n+1) {
+  background-image: url("../images/star-active.svg"); }
+
+.stars--2 .stars__star:nth-child(-n+2) {
+  background-image: url("../images/star-active.svg"); }
+
+.stars--3 .stars__star:nth-child(-n+3) {
+  background-image: url("../images/star-active.svg"); }
+
+.stars--4 .stars__star:nth-child(-n+4) {
+  background-image: url("../images/star-active.svg"); }
+
+.stars--5 .stars__star:nth-child(-n+5) {
+  background-image: url("../images/star-active.svg"); }
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #00acdc;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #00acdc;
+  border-radius: 5px;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in; }
+  .btn:hover {
+    color: #00acdc;
+    background-color: #fff; }
+
+/* General styles */
+html {
+  font: 100% "Roboto", sans-serif; }
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0; }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
+
+/*# sourceMappingURL=main.css.map */
