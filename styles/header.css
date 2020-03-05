@@ -35,9 +35,7 @@
     line-height: 60px;
     text-decoration: none;
     color: #000;
-    text-transform: uppercase;
-    -webkit-transition: all 0.1s ease-in;
-    transition: all 0.1s ease-in; }
+    text-transform: uppercase; }
   .menu__link:hover {
     color: #00acdc; }
 
