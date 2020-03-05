@@ -23,7 +23,15 @@
   }
 
   &__photo {
-    margin: 15px 5px;
+    padding: 12px 0;
+    border: 3px solid;
+    border-color: transparent;
+    transition: transform 1s;
+
+    &:hover {
+      transform: scale(1.2);
+      border-color: $product-card-border-color;
+    }
   }
 
   &__image {
@@ -37,7 +45,7 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 15px;
-    margin-top: 45px;
+    margin-top: 30px;
     margin-bottom: 0;
   }
 
